@@ -8,12 +8,10 @@ menu_page = MenuPage()
 @when('books: I click Elements')
 def step_impl(context):
     menu_page.click_elements_button()
-    sleep(1)
 
 @when('books: I click Buttons')
 def step_impl(context):
     menu_page.click_buttons_button()
-    sleep(1)
 
 @then('buttons: I check that the URL is correct')
 def step_impl(context):

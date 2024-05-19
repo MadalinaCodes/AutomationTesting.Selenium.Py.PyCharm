@@ -30,13 +30,11 @@ class BooksPage(BasePage):
 
  # validations
     def validate_correct_url(self):
-        sleep(1)
         expected = 'https://demoqa.com/books'
         actual = self.driver.current_url
         self.assertEqual(expected, actual, 'Url is incorrect')
 
     def validate_books_count(self, expected_number): # parametrizam expected_number ca sa putem refolosi functia de cate ori dorim
-        sleep(1)
         actual = len(self.driver.find_elements(By.XPATH, self.NUMBER_OF_BOOKS))
         self.assertEqual(expected_number, actual, 'Number of books is incorrect')
 

@@ -26,7 +26,6 @@ class MenuPage(BasePage):
 
     # validations
     def validate_buttons_url(self):
-        sleep(1)
         expected = 'https://demoqa.com/buttons'
         actual = self.driver.current_url
         self.assertEqual(expected, actual, 'Url is incorrect')

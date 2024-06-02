@@ -1,5 +1,3 @@
-from time import sleep
-
 from pages.books_page import BooksPage
 from behave import *
 
@@ -12,13 +10,6 @@ def step_impl(context):
 @when('books: I search after "{query}"')
 def step_impl(context, query):
     books_page.fill_search_input(query)
-
-@when('books: I add to collection the book with title "{title}"') # de sters
-def step_impl(context, title):
-    books_page.click_book_by_title(title)
-    books_page.click_add_to_your_collection_button()
-    books_page.alert_ok()
-    books_page.click_back_to_bookstore_button()
 
 @when('books: I clear search input')
 def step_impl(context):

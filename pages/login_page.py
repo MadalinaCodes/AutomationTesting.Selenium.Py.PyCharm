@@ -22,9 +22,8 @@ class LoginPage(BasePage):
         self.driver.find_element(By.XPATH, self.LOGIN_BUTTON).click()
 
     # validations
-    def validate_invalid_credentials_error(self):
+    def validate_invalid_credentials_error(self, expected_message):
         self.wait_for_elem(self.LOGIN_BUTTON)
-        expected = 'Invalid username or password!'
-        actual = self.driver.find_element(By.XPATH, self.INVALID_CREDENTIAL_ERROR).text
-        self.assertEqual(expected, actual, 'Error message is incorrect')
+        actual_message = self.driver.find_element(By.XPATH, self.INVALID_CREDENTIAL_ERROR).text
+        self.assertEqual(expected_message, actual_message, 'Error message is incorrect')
 

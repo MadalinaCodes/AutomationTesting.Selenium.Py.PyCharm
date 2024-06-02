@@ -9,6 +9,6 @@ def step_impl(context, user, pswd):
     login_page.fill_pass_input(pswd)
     login_page.click_login_button()
 
-@then('login: I validate that error message is displayed')
-def step_impl(context):
-    login_page.validate_invalid_credentials_error()
+@then('login: I validate that "{error_message}" is displayed')
+def step_impl(context, error_message):
+    login_page.validate_invalid_credentials_error(error_message)

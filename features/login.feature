@@ -13,7 +13,7 @@ Feature: Login capability
   @regression
   Scenario Outline: I login with invalid credentials
     When login: I login with user "<user>" and pass "<pswd>"
-    Then login: I validate that error message is displayed
+    Then login: I validate that "Invalid username or password!" is displayed
 
   Examples:
     | user          | pswd       |

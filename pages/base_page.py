@@ -1,4 +1,3 @@
-from time import sleep
 from browser import Browser
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -14,10 +13,5 @@ class BasePage(Browser, unittest.TestCase): # din libraria unittest importam cla
 
     def browser_back(self):
         self.driver.back()
-
-    def alert_ok(self):
-        sleep(1)
-        self.driver.switch_to.alert.accept()
-
 
 

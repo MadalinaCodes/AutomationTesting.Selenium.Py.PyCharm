@@ -10,4 +10,15 @@ Feature: Menu capability
     When books: I click Buttons
     Then buttons: I check that the URL is correct
 
+  @menu
+  Scenario: I navigate to Web Tables page
+    When books: I click Elements
+    When books: I click Web Tables
+    Then webtables: I check that the URL is correct
+
+  @menu
+  Scenario: I navigate to Auto Complete page
+    When books: I click Widgets
+    When books: I click Auto Complete
+    Then auto-complete: I validate the URL
 

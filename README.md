@@ -1,4 +1,4 @@
-The scope of this project is to test the some features from the https://demoqa.com/ site with the help of test scenarios.
+The scope of this project is to test some features from the https://demoqa.com/ site with the help of test scenarios.
 
 > Prerequisites
 
@@ -30,7 +30,7 @@ II. The libraries used are selenium, behave and unittest. To install them, run t
 		pip install behave
 		pip install behave-html-formatter
 	
-	We will also install the Gherkin and Ini pluggins, in order to create reports.
+	We will also install the Gherkin and Ini pluggins, in order to create reports. For this we will navigate to Settings, select Plugins, then search for Gherkin and Ini and add them to PyCharm.
  
 III. The browser.py file creates the Browser class and initializes the browser and waits.
 

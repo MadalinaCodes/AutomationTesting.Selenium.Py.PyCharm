@@ -26,17 +26,17 @@ def step_impl(context):
 def step_impl(context):
     menu_page.validate_web_tables_url()
 
-# # auto complete
-# @when('books: I click Widgets')
-# def step_impl(context):
-#     menu_page.click_widgets_button()
-#
-# @when('books: I click Auto Complete')
-# def step_impl(context):
-#     menu_page.click_auto_complete_button()
-#
-# @then('auto-complete: I validate the URL')
-# def step_impl(context):
-#     menu_page.validate_auto_complete_url()
+# auto complete
+@when('books: I click Widgets')
+def step_impl(context):
+    menu_page.click_widgets_button()
+
+@when('books: I click Auto Complete')
+def step_impl(context):
+    menu_page.click_auto_complete_button()
+
+@then('auto-complete: I validate the URL')
+def step_impl(context):
+    menu_page.validate_auto_complete_url()
 
 

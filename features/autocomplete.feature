@@ -9,7 +9,7 @@
 #  @auto
 #  Scenario: Validate correct URL
 #    Then auto-complete: I check that the URL is correct
-#
+##
 #  @auto
 #  Scenario: I validate that the auto complete is working
 #    When auto-complete: I introduce "<query>"

@@ -54,20 +54,20 @@ class MenuPage(BasePage):
         self.assertEqual(expected, actual, 'Url is incorrect')
 
 
-    # # auto complete actions
-    # def click_widgets_button(self):
-    #     self.wait_for_elem(self.WIDGETS_BUTTON)
-    #     self.driver.find_element(By.XPATH, self.WIDGETS_BUTTON).click()
-    #
-    # def click_auto_complete_button(self):
-    #     self.wait_for_elem(self.AUTO_COMPLETE_BUTTON)
-    #     self.driver.find_element(By.XPATH, self.AUTO_COMPLETE_BUTTON).click()
-    #
-    # def check_auto_complete_url(self):
-    #     assert self.driver.current_url == self.AUTO_COMPLETE_PAGE_URL
-    #
-    # # auto complete validations
-    # def validate_auto_complete_url(self):
-    #     expected = 'https://demoqa.com/auto-complete'
-    #     actual = self.driver.current_url
-    #     self.assertEqual(expected, actual, 'Url is incorrect')
+    # auto complete actions
+    def click_widgets_button(self):
+        self.wait_for_elem(self.WIDGETS_BUTTON)
+        self.driver.find_element(By.XPATH, self.WIDGETS_BUTTON).click()
+
+    def click_auto_complete_button(self):
+        self.wait_for_elem(self.AUTO_COMPLETE_BUTTON)
+        self.driver.find_element(By.XPATH, self.AUTO_COMPLETE_BUTTON).click()
+
+    def check_auto_complete_url(self):
+        assert self.driver.current_url == self.AUTO_COMPLETE_PAGE_URL
+
+    # auto complete validations
+    def validate_auto_complete_url(self):
+        expected = 'https://demoqa.com/auto-complete'
+        actual = self.driver.current_url
+        self.assertEqual(expected, actual, 'Url is incorrect')

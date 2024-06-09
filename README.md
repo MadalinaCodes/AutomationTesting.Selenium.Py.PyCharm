@@ -34,13 +34,13 @@ II. The libraries used are selenium, behave and unittest. To install them, run t
  
 III. The browser.py file creates the Browser class and initializes the browser and waits.
 
-	In context.py file we have 2 methods, one that gets called before each test 
+	In environment.py file we have 2 methods, one that gets called before each test 
 	and another one which gets called after each test 
 
 > Step 3 - Running the tests
 
 	In the test_runs folder we have some files that run the tests 
-	after the tags used in the project (@books, @regression, @smoke, @menu)​
+	after the tags used in the project (@books, @regression, @smoke, @menu, @auto, @buttons)​
 
 	All we have to do is right click on one of these runners and select run. 
 	After the test is done, a html report will be created or updated if it already exists

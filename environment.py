@@ -13,7 +13,7 @@ def after_all(context):
 ce fac aceste 2 fisiere?
  -browser.py- 
 creeaza clasa Browser cu initializarea browserului si a waiturilor
-si in -context.py- 
+si in -environment.py- 
 avem 2 metode
 una care se apeleaza inainte de fiecare test
 si alta care se apeleaza dupa fiecare test

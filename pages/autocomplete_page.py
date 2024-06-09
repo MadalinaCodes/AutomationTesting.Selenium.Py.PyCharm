@@ -1,5 +1,3 @@
-from time import sleep
-
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
@@ -40,12 +38,8 @@ class AutoCompletePage(BasePage):
     def validate_color_auto_complete(self, query):
         colordict = {'Yellow': 'Y',
                      'Purple': 'P',
-                     'Violet': 'V',
-                     'Indigo': 'I',
                      'Magenta': 'M',
-                     'Gray': 'Gr',
-                     'Orange': 'O',
-                     'Beige': 'B'}
+                     'Green': 'Gr'}
 
         expected_color = ''
         for key in colordict.keys():

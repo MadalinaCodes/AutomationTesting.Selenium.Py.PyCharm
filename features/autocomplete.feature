@@ -5,10 +5,6 @@ Feature: Auto-complete capability
     When home: I click widgets card
     When widgets: I click Auto Complete
 
-#  @auto
-#  Scenario: Validate correct URL
-#    Then auto-complete: I should land on auto-complete page
-
   @auto
   Scenario Outline: I validate that the auto complete is working
     When auto-complete: I introduce "<query>"
@@ -17,4 +13,6 @@ Feature: Auto-complete capability
     Examples:
       | query |
       | Y     |
-
+      | P     |
+      | M     |
+      | Gr    |

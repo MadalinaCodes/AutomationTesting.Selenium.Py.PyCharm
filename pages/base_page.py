@@ -15,3 +15,5 @@ class BasePage(Browser, unittest.TestCase): # din libraria unittest importam cla
         self.driver.back()
 
 
+    def wait_for_elem_to_be_clickable(self, xpath_selector): # spre deosebire de sleep care opreste executia testului, tehnica de explicit wait cauta automat testul si in mom in care a gasit elementul trece mai departe, creste viteza testelor
+        WebDriverWait(self.driver, 5).until(EC.element_to_be_clickable((By.XPATH, xpath_selector)))
